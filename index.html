@@ -1,0 +1,20 @@
+<!-- HTML code for the image -->
+<img src="https://www.altotempo.com/altotempo_background.jpg" id="altotempo_background">
+
+<!-- CSS code for the image -->
+<style>
+  /* Set the width of the image to 100% of its container */
+  #altotempo_background {
+    width: 100%;
+  }
+</style>
+
+<!-- JavaScript code to resize the image on page resize -->
+<script>
+  window.onresize = function() {
+    // Get the current width of the image's container
+    var containerWidth = document.getElementById('altotempo_background').parentElement.clientWidth;
+    // Set the width of the image to match the container
+    document.getElementById('altotempo_background').style.width = containerWidth + 'px';
+  }
+</script>
